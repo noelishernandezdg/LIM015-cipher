@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Siempre tú</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2? family = Pangolin & display = swap" rel="hoja de estilo ">
+</head>
+
+<body>
+
+  <header>
+    <img class="banner" src="img/1banner.png" alt="banner">
+  </header>
+  <main>
+    <section>
+      <div id="root">
+        <h1>
+          <center>
+            &#x1f4dc Por qué con amor <br> todo es más bonito &#x1f491;
+          </center>
+        </h1>
+        <h2>
+          &#x1f49c “Siempre tú” trae a ti, la estrategia más linda y entretenida de enviar y recibir cartas de amor
+          cifradas.&#x2728
+        </h2>
+      </div>
+      <section>
+        <h2>
+          &#x1f447 Pasos:
+        </h2>
+        <h2>
+          <ol>
+            <li>Seguramente has recibido algún número especifico para colocar en el campo número.</li>
+            <li>Coloca el número.</li>
+            <li>Escribe la carta que deseas descifrar.</li>
+            <li>Haz clic en descifrar y listo.</li>
+          </ol>
+        </h2>
+      </section>
+      <form id="cifrador" class="number" autocomplete="off">
+        <label for="number">Número</label>
+        <input type="number" id="offSet" placeholder="Aquí" name="number" max="100" min="1" required>
+      </form>
+      <br>
+      <br>
+      <section class="containerForm">
+        <section>
+          <textarea id="textOne" spellcheck="false" placeholder="Mensaje para cifrar <3" rows="10" cols="30"
+            name="text"></textarea>
+          <h3>
+            <button type="button" class="button" id="buttonCipher">Cifrar</button>
+          </h3>
+        </section>
+        <section>
+          <textarea id="textTwo" spellcheck="false" placeholder="Menasaje para descifrar <3" rows="10" cols="30"
+            name="text"></textarea>
+          <h3>
+            <button type="button" class="button" id="buttonDecipher"> Descifrar</button>
+          </h3>
+        </section>
+      </section>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="copy">&copy; Realizado por Noelis</p>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
