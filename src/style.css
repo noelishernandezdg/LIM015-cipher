@@ -9,6 +9,8 @@ main {
 /* Colocando banner */
 header {
     background-image: 50px;
+    display: flex;
+    flex-direction: column;
 }
 /* Alineando nuestros 2 campos de texto */
 .containerForm {
@@ -32,6 +34,8 @@ textarea, input {
 body { 
     background:url(img/fondo.png);
     margin: 0;
+    display: flex;
+    flex-direction: column
     }
 /* Poniendole un fondo de color a las letras, dandole un borde redondeaddo al color de fondo y cmabiando el color de letra */
 h2 {
