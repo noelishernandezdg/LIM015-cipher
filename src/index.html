@@ -17,52 +17,50 @@
   <main>
     <section>
       <form>
-      <div id="root">
-        <h1>
-          <center>
-            &#x1f4dc Por qué con amor <br> todo es más bonito &#x1f491;
-          </center>
-        </h1>
-        <h2>
-          &#x1f49c “Siempre tú” trae a ti, la estrategia más linda y entretenida de enviar y recibir cartas de amor
-          cifradas.&#x2728
-        </h2>
-      </div>
-      <section>
-        <h2>
-          &#x1f447 Pasos:
-        </h2>
-        <h2>
-          <ol>
-            <li>Seguramente has recibido algún número especifico para colocar en el campo número.</li>
-            <li>Coloca el número.</li>
-            <li>Escribe la carta que deseas descifrar.</li>
-            <li>Haz clic en descifrar y listo.</li>
-          </ol>
-        </h2>
-      </section>
-      <form id="cifrador" class="number" autocomplete="off">
-        <label for="number">Número</label>
-        <input type="number" id="offSet" placeholder="Aquí" name="number" max="100" min="1" required>
-      </form>
-      <br>
-      <br>
-      <section class="containerForm">
+        <div id="root">
+          <h1>
+            <center>
+              &#x1f4dc Por qué con amor <br> todo es más bonito &#x1f491;
+            </center>
+          </h1>
+          <h2>
+            &#x1f49c “Siempre tú” trae a ti, la estrategia más linda y entretenida para cifrar o descifrar cartas o mensajes de amor.&#x2728
+          </h2>
+        </div>
         <section>
-          <textarea id="textOne" spellcheck="false" placeholder="Mensaje para cifrar <3" rows="10" cols="30"
-            name="text"></textarea>
-          <h3>
-            <button type="button" class="button" id="buttonCipher">Cifrar</button>
-          </h3>
+          <h2>
+            &#x1f447 Pasos:
+          </h2>
+          <h2>
+            <ol>
+              <li>Si vas a descifrar un mensaje, seguramente recibiste un número especifico, sinó elije uno antes de iniciar (recuerda enviar ese número junto con tu mensaje para que luego lo puedan descrifrar correctamente).</li>
+              <li>Coloca el número (elegido si vas a cifrar o recibido si vas a descifrar) en el recuadro pequeño que dice "AQUÏ".</li>
+              <li>Escribe el mensaje (cifras en el recuadro de la izquierda y descifras en el de la derecha).</li>
+              <li>Haz clic en el botón de descifrar o cifrar (Depende sea caso) y listo.</li>
+            </ol>
+          </h2>
         </section>
-        <section>
-          <textarea id="textTwo" spellcheck="false" placeholder="Menasaje para descifrar <3" rows="10" cols="30"
-            name="text"></textarea>
-          <h3>
-            <button type="button" class="button" id="buttonDecipher"> Descifrar</button>
-          </h3>
+        <form id="cifrador" class="number" autocomplete="off">
+          <input type="number" id="offSet" placeholder="Aquí" name="number" max="100" min="1" required>
+        </form>
+        <br>
+        <br>
+        <section class="containerForm">
+          <section>
+            <textarea id="textOne" spellcheck="false" placeholder="Mensaje para cifrar <3" rows="10" cols="30"
+              name="text"></textarea>
+            <h3>
+              <button type="button" class="button" id="buttonCipher">Cifrar</button>
+            </h3>
+          </section>
+          <section>
+            <textarea id="textTwo" spellcheck="false" placeholder="Menasaje para descifrar <3" rows="10" cols="30"
+              name="text"></textarea>
+            <h3>
+              <button type="button" class="button" id="buttonDecipher"> Descifrar</button>
+            </h3>
+          </section>
         </section>
-      </section>
       </form>
     </section>
   </main>

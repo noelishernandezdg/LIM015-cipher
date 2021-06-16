@@ -15,12 +15,3 @@ function descifrar() {
     let string = document.getElementById("textTwo").value;
 document.getElementById("textOne").value = cipher.decode(offSet, string,);
 }
-
-
-
-
-
-
-
-
-// console.log(cipher);

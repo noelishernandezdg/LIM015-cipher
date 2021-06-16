@@ -1,373 +1,90 @@
-# Cifrado César
+# Proyecto Cipher
 
-## Índice
+Elegí el proyecto de cipher porqué me encantó la idea de poder crear mensajes cifrados y se me ocurrieron muchas temáticas para implementar la app.
+Pensando en la temática para la app.
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+Tuve la idea general que hacer una app que sirva para la creación de claves secretas, pero la verdad me parecía que esa idea no tenía vida, no tenía historia… Por lo que se me ocurrió la siguiente idea.
+Principalmente, se desea que los usuarios tomen la iniciativa de enviar mensajes lindos de nuevo, pero con ayuda de la app, lograrán crear mensajes cifrados y enviar a sus enamorados a la misma app para que descifren los mismos. En definitiva, la app está envuelta en una esencia amorosa y un tanto divertida.
 
-***
+## Colores
 
-## 1. Preámbulo
+Como bien sabemos los colores que nos rodean, influyen en como percibimos nuestro alrededor, en como los sentimos y nuestras decisiones, muchas veces de manera inconsciente.
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+La idea era que los usuarios al ver la app sonrieran con lo bonito de los colores y sintieran que si se trataba de mensajes de amor.
+Utilizamos como color principal, el lila en distintas tonalidades:
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+* #CEA5EF
+* #9756F4
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
+*“El color lila se ha asociado con la tranquilidad, la dulzura, la calidez, la mesura y el poco impacto. No suele relacionarse con conductas negativas, por el contrario, se asocia a la sensibilidad, la empatía, la amabilidad, el equilibrio y la madurez.”*
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+[¿Qué significa el color lila en Psicología?](https://psicologiaymente.com/psicologia/que-significa-color-lila)
 
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+utilizamos de complementos colores como grises muy claros o muy oscuros. Se usaron para letras y fondos, con la intención de mantener la suavidad que de las tonalidades de lilas nos brindaban.  
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+* #F4F0F7
+* #313133
 
-## 2. Resumen del proyecto
+No desee agregar de complemento colores como el blanco o negro, ya que harían contraste fuerte con mi temática y la verdad deseaba que todo se viera lo más armonioso posible.  
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+*“Unas veces puede parecer claro, y otras oscuro, pero siempre está buscando la adaptación, y no en su propia tonalidad, sino en función de los colores que lo rodean,”*
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+[El color gris](https://aprendizajeyvida.com/2015/01/05/el-color-gris/)
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+## formas
 
-## 3. Objetivos de aprendizaje
+Quise agregar 2 formas (piezas graficas realizadas en Illustrator) las cuales representan muy bien la temática de mensajes de amor. Una es un sobre con una carta (la encontramos en el banner) y la otra (que se repite en el banner de la app y en el fondo) es un avioncito de papel.
 
-Aprenderás a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías. 
+## Tipografías
 
-_No olvides a pensar en tu plan de acción - los objetivos que vas a prioritizar - y agrega tu plan en el README._
+Utilicé 2 tipografían distintas una para el banner y otra para el contenido escrito de la app (bienvenida y pasos).
 
-### HTML y CSS
+* Pangolin
+* acologica-round_slab
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
+Son tipografías tipo Sans Serif/Rounded: 
 
-### DOM
+Expresan modernidad, cercanía y son legibles en distintos tamaños.
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+[Las tipografías y su personalidad](https://paoperez.com/tipografias-personalidad-transmite/)
 
-### JavaScript
+## funcionamiento
 
-* [ ] Manipulación de strings.
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
+Los usuarios usarían la app para codificar mensajes, que luego enviarán por cualquier medio a sus enamorados.
+Se espera que envíen junto con el mensaje, una pregunta retórica que solo ellos y sus receptores sepan la repuesta.
+ La respuesta debe ser un número (fecha del primer beso, del primer mensajes del día en el que se conocieron) ese es el número que la persona que reciba el mensaje encriptado, colocará en el desplazamiento, para poder descifrar su mensaje.
 
-### Testing
+## Interacción con el usuario
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+* Banner con el nombre de la app.
+* Bienvenida con una frase linda y explicación breve de la intención de la app.
+* Pasos de funcionamiento.
+* Input de desplazamiento.
+* Área de texto con su botón de cifrar.
+* Área de texto con su botón de descifrar.
 
-### Estructura del código y guía de estilo
+## Objetivos de aprendizajes personales 
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+Tengo que reforzar todos los conocimientos básicos en: HTML CSS y JAVASCRIPT, ya que si bien en la semana de preadmisión aprendí mucho, por la premura hubieron muchas cosas que aprendí a medias.
 
-### Git y GitHub
+Deseo avanzar primordialmente con la estructura básica de HTML semántico y selectores básicos de CSS.
+Para luego enfocarme de aprender JS, desde cero, hay muchos conceptos que se me han olvidado y otros que no entiendo. Deseo tomarme el tiempo de entender cada paso que voy dando.
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+## Objetivos de aprendizaje que deseo alcanzar
 
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-
-## 4. Consideraciones generales
-
-* El equipo de coaches te dará un tiempo sugerido e indicaciones. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-### Definición del producto
-
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
-
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-### Interfaz de usuario (UI)
-
-La interfaz debe permitir al usuario:
-
-* Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que
-  el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
-* Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
-* Ver el resultado del mensaje descifrado.
-
-### Scripts / Archivos
-
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron. Aquí puedes agregar un parte para definir tu plan de acción, 
-  Objetivos de Aprendizaje que vas a prioritizar este proyecto.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar el objeto `cipher`, el cual ya está
-  _exportado_ en el _boilerplate_. Este objeto (`cipher`) debe contener dos
-  métodos:
-  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-    que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
-
-## 6. Hacker edition
-
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-La descripción general de este proyecto no menciona qué pasaría con las letras
-minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El
-boilerplate incluye algunos tests (comentados en principio) que puedes usar como
-punto de partida para implementar el soporte para estos casos.
-
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del
-hacker edition te invitamos a explorar también esta caso por tu cuenta.
-
-## 7. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript puro
-también conocido como Vanilla JavaScript.
-
-No se debe utilizar la _pseudo-variable_ `this`.
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
-
-El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene el _boilerplate_.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias y tests de ejemplo:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
-
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
-
-***
-
-## 8. Pistas, tips y lecturas complementarias
-
-### Primeros pasos
-
-1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
-2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](https://github.com/Laboratoria/bootcamp/tree/main/topics/shell),
-   que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](https://github.com/Laboratoria/bootcamp/tree/main/topics/scm/01-git)
-   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-   también). Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
-   que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows
-   10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Debes realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. 
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/) tu fork a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-7. Para ver la interfaz de tu programa en el navegador, usa el comando
-   `npm start` para arrancar el servidor web y dirígete a
-   `http://localhost:5000` en tu navegador.
-8. A codear se ha dicho! :rocket:
-
-### Achicando el gran problema en problemas más pequeños
-
-Un "superpoder" que esperamos puedas desarrollar durante el bootcamp es el de definir "mini-proyectos" que te acerquen paso a paso a la solución del "gran proyecto". Es el equvalente a comenzar armando esquinas o bordes del rompecabezas/puzzle sin saber necesariamente cómo encajarán al final. Déjate llevar y explora. Estas son algunas sugerencias:
-
-**"Mover" un valor de una caja de texto a otra**  
-Crea una interfaz simple con 2 cajas de texto y un botón. Si escribo algo en la caja de texto 1 y le doy click al botón, quiero que lo que escribí se "mueva" desde la caja 1 hacia la caja 2.
-
-Para lograr esto tendrás que aprender a: detectar un evento en el navegador (click), identificar un elemento de tu interfaz para obtener su contenido/valor (la caja de texto 1), "escribir" un valor en otro elemento de la interfaz (caja de texto 2).
-
-**"Convertir" una letra en su código ASCII**  
-Pensando en la misma interfaz anterior (2 cajas de texto y 1 botón). Quiero escribir A o B (una sola) en la caja de texto 1 y que cuando le dé click al botón, aparezca el código ASCII de la letra en la caja de texto 2.
-
-Ahora no solamente estás "leyendo" y "escribiendo" valores en el navegador, también tendrás que "manipularlos" antes de "escribirlos".
-
-**"Cifrar" A o B con un desplazamiento (offset) de 3**  
-Cuando escriba A o B en la caja de texto 1 y le dé click al botón, quiero que apaezca la letra cifrada en la caja de texto 2. Por ejemplo, si escribo B debe aparecer E.
-
-**"Cifrar" una letra con un desplazamiento de 30 caracteres**  
-En los casos anteriores probamos con letras y con un desplazamiento que no implicaban llegar "más allá" de final del alfabeto. Ahora prueba con un caso que sí lo requiera. Por ejmplo 30 caracteres de desplazamiento. Para esto te puede ayudar el video de la sección "Recursos y temas relacionados". La fórmula no es lo importante en este proyecto, lo importante es lo que haces con la fórmula.
-
-**"Cifrar" tres letras con un desplazamiento cuqlquiera**  
-Hasta ahora hemos explorado trabajar con una sola letra pero ¿cómo haríamos si son más? Para hacerlo tendrás que aprender cómo ir cifrando letra por letra y ya estás mucho más cerca de resolver el proyecto "grande"
-
-Fíjate que la complejidad es creciente, la clave está en definir el primer paso lo más simple y pequeño que puedas. Luego tú misma puedes ir agregando complejidad a medida que avanzas.
-
-### Recursos y temas relacionados
-
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
-
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-
-[Link](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-
-También una metodología para empezar a desarrollar tareas con JavaScript:
-
-[![Resolución de problemas con JavaScript](http://i3.ytimg.com/vi/lYfEmhLmu7A/hqdefault.jpg)](https://www.youtube.com/watch?v=lYfEmhLmu7A)
-
-[Link](https://www.youtube.com/watch?v=lYfEmhLmu7A)
-
-Terminal y shell de UNIX:
-
-[![Playlist de Terminal y shell de UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-Control de versiones y trabajo colaborativo con Git y GitHub:
-
-[![Playlist de control de versiones y trabajo colaborativo](https://img.youtube.com/vi/F1EoBbvhaqU/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
-
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-Diseño de experiencia de usuario (User Experience Design):
-
-* Ideación
-* Prototipado (sketching)
-* Testeo e Iteración
-
-Desarrollo Front-end:
-
-* Valores
-* Tipos
-* Variables
-* Control de flujo
-* Tests unitarios
-* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
-* [Documentación de NPM](https://docs.npmjs.com/)
-
-Organización del Trabajo:
-
-* [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
-* [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
-  esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
-  poco a lo largo del -_bootcamp_.
-* [Guía para Cifrado César](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
-
-## 9. Checklist
-
-Esta sección está para ayudarte a llevar un control de lo que vas completando.
-
-### Parte Obligatoria
-
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
-* [ ] `README.md` (o otro archivo) contiene tu plan de acción - Objetivos que prioritizaste este proyecto.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
-  mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
-  cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
-
-### Parte Opcional: "Hacker edition"
-
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* Diseñar la aplicación pensando y entendiendo al usuario.
+* Crear prototipos para obtener feedback e iterar
+* Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+* Uso de HTML semántico
+* Uso de selectores de CSS.
+* Construir tu aplicación respetando el diseño realizado (maquetación).
+* Uso de selectores del DOM.
+* Manejo de eventos del DOM.
+* Manipulación de strings.
+* Uso de condicionales if-else.
+* Uso de bucle for.
+* Organizar y dividir el código en módulos (Modularización).
+* Uso de identificadores descriptivos (Nomenclatura | Semántica).
+* Uso de linter (ESLINT).
+* Git, GitHub [Uso de comandos de git (add | commit | pull | status | push).
+* Git y GitBuh: Manejo de repositorios de GitHub (clone | fork | gh-pages).
