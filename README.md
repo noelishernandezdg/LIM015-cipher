@@ -48,6 +48,10 @@ Expresan modernidad, cercanía y son legibles en distintos tamaños.
 
 [Las tipografías y su personalidad](https://paoperez.com/tipografias-personalidad-transmite/)
 
+## prototipo
+
+![imagen](img/prototipo.jpg)
+
 ## funcionamiento
 
 Los usuarios usarían la app para codificar mensajes, que luego enviarán por cualquier medio a sus enamorados.
